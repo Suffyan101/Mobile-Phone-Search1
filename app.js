@@ -96,13 +96,19 @@ var realme ={
         Camera:"18mp",
     },
 }
-var c = ['s6','s7','s8']
+var c = ['s6','s7','s8','s9','s10','s20',
+'realme3','realme5','realme6','iphone7','iphone8',
+'iphone8plus','iphonex','iphonexmax','iphonexsmax']
 
 
 var a = document.getElementById("select")
-var b = document.getElementById("search").value
+var b = document.getElementById("search")
+var d = b.value.toLowercase()
+var e = c.indexOf(d)
 function on_click(){
     if(a.value === "iphone" || a.value === "sumsung" || a.value === "realme"){
-        if(b ===)
+        if(e === -1){
+            
+        }
     }
 }
