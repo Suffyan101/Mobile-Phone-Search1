@@ -103,12 +103,17 @@ var c = ['s6','s7','s8','s9','s10','s20',
 
 var a = document.getElementById("select")
 var b = document.getElementById("search")
-var d = b.value.toLowercase()
-var e = c.indexOf(d)
+var d = b.value
+var e = c.indexOf('d')
 function on_click(){
     if(a.value === "iphone" || a.value === "sumsung" || a.value === "realme"){
-        if(e === -1){
-            
+        if(e !== -1){
+            if(a.value === "iphone"){
+                document.getElementById('demo').innerHTML=a.value['d'].Name
+            }
+        }
+        else{
+            document.write("Result Not Found")
         }
     }
 }
