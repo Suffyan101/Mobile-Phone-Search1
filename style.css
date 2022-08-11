@@ -1,0 +1,53 @@
+body{
+    background: linear-gradient(35deg,#CCFFFf,#FFCCCC);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header{
+    text-align: center;
+    width: 320px;
+    height: 90px;
+}
+.nav{
+    list-style: none;
+}
+
+.nav li{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+}
+.nav li:hover{
+    background-color: grey;
+    
+}
+.nav li a:hover{
+    color: white;
+}
+#select{
+    margin-top: 10px;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+#search{
+    padding: 3px;
+    width: 500px;
+    border-radius: 5px;
+}
+#search-btn{
+    margin: 5px;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+#search-btn:hover{
+    background-color: grey;
+    color: white;
+}
