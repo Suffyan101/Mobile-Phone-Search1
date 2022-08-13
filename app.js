@@ -120,7 +120,7 @@ function generateHtml(brand, price, color, features) {
     return div;
 }
 
-function notfound(NotFound){
+function notfound(NotFound) {
     var div = document.createElement('div')
     var a = document.createElement('h1')
     var text = document.createTextNode(NotFound)
@@ -136,23 +136,19 @@ var main = document.getElementById("demo");
 function on_click() {
     var a = document.getElementById("select").value;
     var b = document.getElementById("search").value;
-    // var result = mobile[a][b]
-    // var c = mobile
-    
-        var result = Object.keys(mobile[a])
-        console.log(result)
-        var c  = result.indexOf(b)
-        var d = mobile[a][b]
-        var e = "Search Not Found"
-        if(c !== -1){
-            window.location("file:///D:/Mobile-Phone-Search1/index.html")
-            main.appendChild(generateHtml(d.Name, d.Price, d.Colour, d.Camera));
-            
-            
-        }
-        else{
-            main.appendChild(notfound(e));
-        }
-        
-    
+    var remove = b.split(" ").join("")
+
+    var result = Object.keys(mobile[a])
+    var c = result.indexOf(remove);
+    var d = mobile[a][remove];
+    var e = "Search Not Found";
+
+    if (c !== -1) {
+        main.appendChild(generateHtml(d.Name, d.Price, d.Colour, d.Camera));
+    }
+    else {
+        main.appendChild(notfound(e));
+    }
+
+
 }
